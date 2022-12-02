@@ -1,0 +1,62 @@
+#profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 0.8vw, 20px);
+    width: clamp(600px, 80vw, 1400px);
+    -ms-flex-align: end;
+}
+
+#profiles>.profile {
+    aspect-ratio: 7 / 8;
+    backdrop-filter: blur(0.75vw);
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: background-color 250ms;
+    width: calc(25% - clamp(10px, 0.8vw, 20px));
+}
+
+#profiles>.profile:hover {
+    backdrop-filter: blur(1vw);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile>.profile-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - clamp(8px, 1vw, 12px));
+    justify-content: center;
+    padding: clamp(8px, 1vw, 12px);
+}
+
+.profile>.profile-content>.profile-pic {
+    aspect-ratio: 1;
+    border: clamp(3px, 0.4vw, 5px) solid white;
+    border-radius: 100%;
+    flex-shrink: 0;
+    height: 70%;
+    position: relative;
+}
+
+.profile >.profile-content>.profile-pic>.profile-pic-image {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 100%;
+    height: calc(100% - clamp(10px, 1.5vw, 20px));
+    margin: clamp(5px, 0.75vw, 10px);
+    object-fit: cover;
+    width: calc(100% - clamp(10px, 1.5vw, 20px));
+}
+
+.profile>.profile-content>.profile-name {
+    color: white;
+    font-size: clamp(1em, 2vw, 2em);
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile>.profile-content>.profile-name:hover {
+    color: #0496FF;
+}   

@@ -1,0 +1,62 @@
+.header .container h1 {
+    font-size: 3rem;
+}
+
+.header .container p {
+    width: 50%;
+}
+
+@media (min-width: 576px) {
+    .header .container p {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header .container p {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header .container p {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header .container p {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .header .container p {
+        max-width: 1320px;
+    }
+}
+
+.header .right {
+    z-index: 100;
+    margin-left: 90rem;
+    margin-top: -4rem;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+.header a {
+    text-decoration: none;
+    padding: 1rem  2rem;
+    position: absolute;
+    border-radius: 0.5em;
+    background-color: rgba(33, 39, 56, 0.6);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.header a:hover {
+    background-color: rgba(33, 39, 56, 0.9);
+}
+
